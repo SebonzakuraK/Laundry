@@ -1,0 +1,436 @@
+<!Doctype>
+<html>
+    <head>
+        <title>customer order</title>
+        
+        <link rel="stylesheet" href="public_html/Bootstrap.css">
+        <link rel='stylesheet' href='public_html/Icons.css'>
+        <link  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'  rel='stylesheet'/>
+        
+        <style>
+            body{
+                background-image:url("Img/anime.jpg");
+                    height:auto;
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                  position: inherit;
+            }
+            .bg-opacity{
+                      height: auto;
+                      background-color: rgba(255,254,150,0.55);
+                      background-size: cover; 
+                      
+                  }
+          li{
+                list-style: none;
+                display:table-cell;
+                text-align: center;
+          }
+            @media (min-width:500px){
+                .identity{
+                    margin-top:  15px;
+                    display: inline-grid;
+                    width: 80%;
+                    padding-bottom: 10px;
+                   margin-left: 10%;
+                 }
+                textarea{
+                width: 190px;
+            }
+            label{
+                width: 100px;
+            }
+            li{
+                display: list-item;
+                
+            }
+            
+            }
+            @media(min-width:600px){
+                .identity{
+                    margin-top:  20px;
+                    margin-left: 0;
+                    display: inline-flex;
+                    width: 100%;
+                   padding-bottom: 10px;
+                   
+                 }
+                     textarea{
+                width: 190px;
+            }
+            label{
+                width: 150px;
+            }
+            li{
+                display: inline-grid;
+                text-align: center;
+            }
+            }
+            @media(min-width:780px){
+                .identity{
+                   width:100%;
+                   padding: 10px;
+                   margin-left: 10%;
+                 }
+                 .hr{
+                     margin-left: 5%;
+                     height:10px;
+                     background: red;
+                 }
+                     textarea{
+                width: 190px;
+            }
+            label{
+                width: 200px;
+            
+          }
+          li{
+              display:inline-table;
+             
+          }
+            }
+        </style>
+        
+        <script >
+        function list(){
+            var d=document.getElementById("ClotheType");
+            var displaytext=d.options[d.selectedIndex].text;
+            document.getElementById("SelectedOption").value=displaytext;
+            
+        }
+        
+        
+        function showHideForm(){
+            const shirtsField = document.getElementById('Shirts/Blouses');
+        
+            
+            if(document.getElementById('Bhide').checked ) {
+                shirtsField.style.display='block';
+                
+            }else{
+                shirtsField.style.display='none';
+            }
+            
+            if(document.getElementById('Thide').checked ) {
+                document.getElementById('Trousers/Shorts').style.display='block';
+                
+            }else{
+                document.getElementById('Trousers/Shorts').style.display='none';
+            }
+            
+            if(document.getElementById('Jhide').checked ) {
+                document.getElementById('Jackets/Hoodies').style.display='block';
+                
+            }else{
+                document.getElementById('Jackets/Hoodies').style.display='none';
+            }
+            
+            if(document.getElementById('Chide').checked ) {
+                document.getElementById('Curtains/Carpets').style.display='block';
+                
+            }else{
+                document.getElementById('Curtains/Carpets').style.display='none';
+            }
+           
+        if(document.getElementById('Shide').checked ) {
+                document.getElementById('Suits/Official').style.display='block';
+                
+            }else{
+                document.getElementById('Suits/Official').style.display='none';
+            }
+        
+        if(document.getElementById('Whide').checked ) {
+                document.getElementById('ChildWear').style.display='block';
+                
+            }else{
+                document.getElementById('ChildWear').style.display='none';
+            }
+        
+        }
+        function LabelColor(){
+        if(document.getElementById('ScB').checked){
+            document.getElementById('LScB').style.color='green';
+           }else{
+               document.getElementById('LScB').style.color='red';
+           }
+           if(document.getElementById('TcB').checked){
+            document.getElementById('LTcB').style.color='green';
+           }else{
+               document.getElementById('LTcB').style.color='red';
+           }
+           if(document.getElementById('JcB').checked){
+            document.getElementById('LJcB').style.color='green';
+           }else{
+               document.getElementById('LJcB').style.color='red';
+           }
+           if(document.getElementById('CCcB').checked){
+            document.getElementById('LcB').style.color='green';
+           }else{
+               document.getElementById('LcB').style.color='red';
+           }
+           if(document.getElementById('SOcB').checked){
+            document.getElementById('LOcB').style.color='green';
+           }else{
+               document.getElementById('LOcB').style.color='red';
+           }
+           if(document.getElementById('WcB').checked){
+            document.getElementById('LWcB').style.color='green';
+           }else{
+               document.getElementById('LWcB').style.color='red';
+           }
+    }
+        </script>
+        
+        
+    </head>
+    
+    <body>
+        <div class="bg-opacity">
+        <!--nav bar-->
+   
+    <fieldset>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">The Hysson Cleaners</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="public_html/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="public_html/Prices.html">Prices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled"
+            >Disabled</a
+          >
+        </li>
+      </ul>
+        <form class="d-flex input-group w-auto" action="Customer.php" method="POST">
+        <input
+          type="search"
+          class="form-control"
+          name="Search"
+          placeholder="Type query"
+          aria-label="Search"
+        />
+        <input type="submit" value="Search" name="QuerySearch"
+          class="btn btn-outline-primary"
+          data-mdb-ripple-color="dark"  >
+        
+      </form>
+    </div>
+  </div>
+</nav>
+    </fieldset>
+    <!-- fill out form-->
+        
+        <div class="container">
+            <form class="form" action="CustSave.php" method="POST">
+                <fieldset class="identity">
+                <input type="text" name="id" placeholder="identity" minlength="7" maxlength="8" required>
+           <br> <input type = "text" name="username" placeholder="Full Name" required>
+            <br><input type="datetime-local" name="datetime" required>
+              </fieldset>
+            <hr style="width: 90%" class="hr">
+              
+            <fieldset>
+                <p>Select Cloth Type:</p>
+                <ul>
+                    
+                    <li><input type="checkbox" id="Bhide" name="Bhide" value="Shirts/Blouses"   onclick="showHideForm()">
+            <label for="Bhide">Shirts/Blouses</label>
+          
+            </li>
+          <li><input type="checkbox" id="Thide" name="Thide" value="Trousers/Shorts"   onclick="showHideForm()">
+            <label for="Thide">Trousers/Shorts</label>
+            
+            </li>
+          <li><input type="checkbox" id="Jhide" name="Jhide" value="Jackets/Hoodies"   onclick="showHideForm()">
+            <label for="Jhide">Jackets/Hoodies</label>
+            
+            </li>
+          <li><input type="checkbox" id="Chide" name="Chide" value="Curtains/Carpets"   onclick="showHideForm()">
+            <label for="Chide">Curtains/Carpets</label>
+            
+            </li>
+            <li><input type="checkbox" id="Shide" name="Shide" value="Suits/Official"   onclick="showHideForm()">
+            <label for="Shide">Suits</label>
+            
+            </li>
+            <li>  <input type="checkbox" id="Whide" name="Whide" value="Child Wear"   onclick="showHideForm()">
+            <label for="Whide">Child Wear</label>
+             </li>
+                </ul>
+
+                 
+            </fieldset>
+            
+            <!-- Shirts and Blouses Section/ Fieldset -->
+            <hr>
+            
+            
+            <fieldset  id="Shirts/Blouses" >         
+
+  <label for="ShirtsQuantity" class="form-label">Number of Shirts/Blouses:</label>
+      <input type="number" id="ShirtQuantity"name="ShirtQuantity" placeholder="Shirt/Blouse Quantity">
+  <br>
+  
+  <label for="ShirtColor" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="ShirtColor" placeholder="* Be Specific; red blouse" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="Shirt/Blouse Material" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="ShirtBmaterial" placeholder="Clothe Material" > 
+  <br><br>   
+  <input type="checkbox" id="ScB" name="ScB" onclick="LabelColor()" >
+  <label for="ScB" id="LScB" style="color:red">Confirm </label>
+  
+  <hr>
+   </fieldset>
+            
+            <!--Trousers And Shorts Fieldset  -->
+            
+            
+            <fieldset  id="Trousers/Shorts">         
+ 
+  <label for="TrousersQuantity" class="form-label">Number of Trousers:</label>
+      <input type="number" id="TrousersQuantity"name="TrousersQuantity" placeholder="Trousers/Shorts Quantity">
+  <br>
+  
+  <label for=" TrousersColor" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="TrousersColor" placeholder="* Be Specific; Black Short" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="TrousersMaterial" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="TrousersMaterial" placeholder="Clothe Material" > 
+  <br><br>  
+  <input type="checkbox" id="TcB" name="TcB" onclick="LabelColor()" >
+  <label for="TcB" id="LTcB" style="color:red">Confirm </label>
+  
+  <hr>
+   </fieldset>
+            
+            <!--Jackets and Hoodies Section-->
+            
+            
+<fieldset  id="Jackets/Hoodies" >         
+  
+  <label for="HoodieQuantity" class="form-label">Number of Hoodies/Jackets:</label>
+      <input type="number" id="HoodieQuantity"name="HoodieQuantity" placeholder="Hoodie/Jackets Quantity">
+  <br>
+  
+  <label for="HoodieColor" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="HoodieColor" placeholder="* Be Specific; Grey Hoodie" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="HoodieMaterial" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="HoodieMaterial" placeholder="Clothe Material" > 
+  <br><br>  
+  
+  <input type="checkbox" id="JcB" name="JcB" onclick="LabelColor()" >
+  <label for="JcB" id="LJcB" style="color:red">Confirm </label>
+  
+  <hr>
+   </fieldset>
+            
+            <!-- Curtains And Carpets section -->
+            
+            
+            <fieldset  id="Curtains/Carpets">         
+        <label for="CCQuantity" class="form-label">Number of    Curtains/Carpets:</label>
+      <input type="number" id="CCQuantity"name="CCQuantity" placeholder="Number of Curtains/Carpets">
+  <br>
+  
+  <label for="CC_Color" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="CC_Color" placeholder="* Be Specific; 2 Meters" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="CCMaterial" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="CCMaterial" placeholder="Clothe Material" > 
+  <br><br>  
+  
+  <input type="checkbox" id="CCcB" name="CCcB" onclick="LabelColor()" >
+  <label for="CCcB" id="LcB" style="color:red">Confirm </label>
+  
+  <hr>
+   </fieldset>            
+            
+            <!--Suits Officaila Wear-->
+            
+            
+            <fieldset  id="Suits/Official" >         
+    <label for="SuitQuantity" class="form-label">Number of Suits:</label>
+      <input type="number" id="SuitQuantity"name="SuitQuantity" placeholder="Child Wear Quantity">
+  <br>
+  
+  <label for="SuitColor" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="SuitColor" placeholder="* Be Specific; Pink Suit" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="SuitMaterial" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="SuitMaterial" placeholder="Clothe Material" > 
+  <br><br>   
+
+<input type="checkbox" id="SOcB" name="SOcB" onclick="LabelColor()" >
+  <label for="SOcB" id="LOcB" style="color:red">Confirm </label>
+    
+<hr>  
+   </fieldset>
+            
+            <!--Chid Wear-->
+            
+            
+            <fieldset  id="ChildWear">         
+    <label for="ChildQuantity" class="form-label">Child Clothe Quantity Q:</label>
+      <input type="number" id="ChildQuantity"name="ChildQuantity" placeholder="Quantity">
+  <br>
+  
+  <label for="ChildColor" class="form-label">Input Clothe Color/Description:</label>
+  <textarea id="" name="ChildColor" placeholder="* Be Specific; Purple Dress" rows="1" cols="23"></textarea>
+  
+  <br>
+  
+   <label for="ChildMaterial" class="form-label">input Clothe Material:</label>
+ 
+  <input type="text" name="ChildMaterial" placeholder="Clothe Material" > 
+  <br><br>  
+  
+  <input type="checkbox" id="WcB" name="WcB" onclick="LabelColor()" >
+  <label for="WcB" id="LWcB" style="color:red">Confirm </label>
+  
+  <hr>
+   </fieldset>
+            
+  <input type="submit" value="Submit" name="submit">
+  <input type="reset" value="reset">
+        </form>
+            
+            <textarea id="Receipt" name="Receipt" rows="7" cols="30" readonly></textarea>>
+            
+        </div>
+    </div>
+     <script  type='text/javascript'  src='public_html/MDB.js'></script>
+    </body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hysson Cleaners Service prices</title>
+        <link rel="stylesheet" href="Bootstrap.css">
+        <link rel="stylesheet" href="Icons.css">
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet"/>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        
+        <style>
+ html,
+body,
+.intro {
+  height: 100%;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: .5rem;
+}  
+
+  .single-price {
+  text-align: center;
+  background: #262626;
+  transition: .7s;
+  margin-top: 20px;
+}
+.single-price h3 {
+  font-size: 25px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  margin-top: -80px;
+  font-family: poppins;
+  color: #fff;
+}
+.single-price h4 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+}
+.single-price h4 span.sup {
+  vertical-align: text-top;
+  font-size: 25px;
+}
+.deal-top {
+  position: relative;
+  background: #16A086;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 136px 24px 0;
+}
+.deal-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #16A086;
+  border-left: 175px solid transparent;
+  border-right: 183px solid transparent;
+}
+.deal-bottom {
+  padding: 56px 16px 0;
+}
+.deal-bottom ul {
+  margin: 0;
+  padding: 0;
+}
+.deal-bottom  ul li {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 16px;
+  border-top: 1px solid #E4E4E4;
+  padding-top: 16px;
+  list-style: none;
+}
+.btn-area a {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #16A086;
+  padding: 8px 64px;
+  margin-top: 32px;
+  border-radius: 4px; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.single-price:hover {
+  background: #16A086;
+}
+.single-price:hover .deal-top {
+  background: #262626;
+}
+.single-price:hover .deal-top:after {
+  border-top: 50px solid #262626;
+}
+.single-price:hover .btn-area a {
+  background: #262626;
+}
+
+
+
+
+
+
+        </style>        
+        
+        
+        <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="index.html">The Hysson Cleaners</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Link -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+            
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+              
+              
+            Account
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../IN/registration.php">Register-Basic</a></li>
+             <li><a class="dropdown-item" href="../IN/StandardReg.php">Register-Standard</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Icons -->
+      <ul class="navbar-nav d-flex flex-row me-1">
+        <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="http://www.instagram.com/Hysson_Cleaners">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="https://www.twitter.com/Hysson_Cleaners"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+      <!-- Search -->
+      <form class="w-auto">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Type query"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+        
+    </head>
+    
+    <body>
+        
+        
+    
+        <section class="intro">
+  <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img4.jpg');">
+    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(25, 185, 234,.25);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Cotton/Silk</th>
+                        <th scope="col">Velvet/Twill</th>
+                        <th scope="col">Viscose</th>
+                        <th scope="col">Spandex</th>
+                        <th scope="col">Linen/Toile</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Shirts/Blouse</th>
+                        <td>300</td>
+                        <td>-</td>
+                        <td>250</td>
+                        <td>300</td>
+                        <td>250</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Trousers/Dresses</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>350</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>350</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Suits</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>500</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>500</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>500</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Coats/Jackets</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>250</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>250</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>250</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Denim/Jeans</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>350</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Carpets/Curtains/Upholstery</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>150</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>150</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pillows/Bedding</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>-</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>300</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Baby Size</th>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>200</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>150</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>150</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-success">
+                            <i class="fas fa-caret-up me-1"></i><span>150</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="text-danger">
+                            <i class="fas fa-caret-down me-1"></i><span>200</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+          
+        
+        <div class="pricing-area"  style=" background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img4.jpg'); background-color: rgba(25, 185, 234,.25);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-price">
+          <div class="deal-top">
+            <h3>Basic</h3>
+            <h4> 2900 <span class="sup">Ksh: </span> </h4> 
+          </div>
+          <div class="deal-bottom">
+            <ul class="deal-item">
+              <li>Cotton/Silk 600/=</li>
+              <li>Velvet/Twill 550/=</li>
+              <li>Viscose 550/=</li>
+              <li>Spandex 600/= </li>
+              <li>linen/Toile 600/= </li>
+            </ul>
+            <div class="btn-area">
+              <a href="../IN/registration.php">Sign Up</a>       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12" id="SU">
+        <div class="single-price">
+          <div class="deal-top">
+            <h3>Standard</h3>
+            <h4> 3350 <span class="sup">Ksh:</span> </h4>
+          </div>
+          <div class="deal-bottom">
+            <ul class="deal-item">
+              <li>Cotton/Silk 700/=</li>
+              <li>Velvet/Twill 650/=</li>
+              <li>Viscose 650/=</li>
+              <li>Spandex 700/= </li>
+              <li>linen/Toile 650/= </li>
+            </ul>
+            <div class="btn-area">
+              <a href="../IN/StandardReg.php">Sign Up</a>       
+            </div>
+          </div>
+        </div>
+      </div >
+   </div>
+  </div>       
+
+
+</div>
+
+
+
+
+
+       
+        <script  type="text/javascript"  src="MDB.js"></script>
+    </body>
+</html>
